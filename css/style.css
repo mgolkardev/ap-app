@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url("modal.css");
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #040403;
+    color: #3B3B3B;
+    padding: 40px;
+}
+
+/* main */
+main{
+    background-color: #B5B5B5;
+    border-radius: 25px;
+    padding: 16px;
+}
+
+video{
+    width: 100%;
+}
+
+.fetching video{
+    display: none;
+}
+
+/* item */
+.updateBtn,
+.cancelBtn{
+    display: none;
+}
+
+.update-mode .updateBtn,
+.update-mode .cancelBtn{
+    display: initial;
+}
+.update-mode .addBtn{
+    display: none;
+}
+
+ul:empty::before{
+    content: "please add todo.";
+}
+
+li{
+    list-style: decimal;
+}
+
+li:nth-child(even){
+    background-color: #ccc;
+}
+
+li .title{
+    min-width: 200px;
+    display: inline-block
+}
+
+li .actions .material-icons{
+    cursor: pointer;
+}
+
+
+/* loader */
+.fetching .loader {
+    margin: 25px auto;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    width: 25px;
+    height: 25px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

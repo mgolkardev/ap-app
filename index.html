@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo - Golkar</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- todo form -->
+      <h1>Add Todo</h1>
+      <form>
+        <input type="text" placeholder="Please enter todo title" />
+        <button type="submit" class="addBtn">Add</button>
+        <button type="submit" class="updateBtn">Update</button>
+        <button type="button" class="cancelBtn">Cancel</button>
+      </form>
+
+      <!-- todo list -->
+      <h1>Todo List</h1>
+      <ul></ul>
+
+      <!-- video modal -->
+      <div id="video-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">
+            <i class="material-icons">close</i>
+          </span>
+          <div class="loader"></div>
+          <video controls autoplay>
+            Your browser does not support HTML video.
+          </video>
+        </div>
+      </div>
+    </main>
+
+    <!-- scripts -->
+    <script src="js/modal.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
